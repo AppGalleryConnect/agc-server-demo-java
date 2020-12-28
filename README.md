@@ -13,8 +13,8 @@ These are the available demos in this repository.
 
 | Demo | Version | Documentation |
 |--------|-----|-----|
-| [agc-authservice-demo-java](./agc-authservice-demo-java) | [![version](https://img.shields.io/badge/Release-1.1.0.300-yellow)](./agc-authservice-demo-java) | [Getting Started](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-auth-server-getstarted-0000001054287616) <br/> [API Reference](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-References/auth-serversdk-overview-0000001055363337) |
-| [agc-cloudstorage-demo-nodejs](./agc-cloudstorage-demo-nodejs) | [![version](https://img.shields.io/badge/Release-1.0.0.0-yellow)](./agc-cloudstorage-demo-nodejs) | [Getting Started](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-Guides/agc-cloudstorage-getstarted-nodejs) <br/> [API Reference](https://developer.huawei.com/consumer/cn/doc/development/AppGallery-connect-References/Overview-nodejs) |
+| [agc-authservice-demo-java](./agc-authservice-demo-java) | [![version](https://img.shields.io/badge/Release-1.1.0.300-yellow)](./agc-authservice-demo-java) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-server-getstarted-0000001054287616) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/auth-serversdk-overview-0000001055363337) |
+| [agc-cloudstorage-demo-nodejs](./agc-cloudstorage-demo-nodejs) | [![version](https://img.shields.io/badge/Release-1.0.0.0-yellow)](./agc-cloudstorage-demo-nodejs) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-cloudstorage-getstarted-nodejs) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/Overview-nodejs) |
 
 ## Precautions
 The agc-android-demos project contains 15 independent projects. After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
@@ -23,5 +23,6 @@ The agc-android-demos project contains 15 independent projects. After downloadin
 If you have questions about how to use AppGallery Connect Demos, try the following options:  
 * [Stack Overflow](https://stackoverflow.com/questions/tagged/appgallery) is the best place for any programming questions. Be sure to tag your question with huawei-mobile-services.  
 * [Huawei Developer Forum](https://forums.developer.huawei.com/forumPortal/en/home?fid=0101188387844930001) AppGallery Module is great for general questions, or seeking recommendations and opinions.
+* [Submit ticket online](https://developer.huawei.com/consumer/en/support/feedback/#/) If you encounter a serious or urgent problem, submit a trouble ticket online to contact Huawei technical support.
 
 If you run into a bug in our samples, please submit an [issue](https://github.com/AppGalleryConnect/agc-android-demos/issues) to the Repository. Even better you can submit a [Pull Request](https://github.com/AppGalleryConnect/agc-android-demos/pulls) with a fix.
