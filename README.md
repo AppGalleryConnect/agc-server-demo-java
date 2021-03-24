@@ -1,4 +1,4 @@
-# agc-server-demos
+# agc-server-demo-java
 [![license](https://img.shields.io/badge/license-Apache--2.0-green)](./LICENCE)
 
 This repo contains the source code for AGC server Demos, which are developed by the AppGallery Connect team.
