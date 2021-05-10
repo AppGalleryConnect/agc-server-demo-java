@@ -1,4 +1,4 @@
-# agc-server-demos
+# agc-server-demo-java
 [![license](https://img.shields.io/badge/license-Apache--2.0-green)](./LICENCE)
 
 This repo contains the source code for AGC server Demos, which are developed by the AppGallery Connect team.
@@ -13,8 +13,7 @@ These are the available demos in this repository.
 
 | Demo | Version | Documentation |
 |--------|-----|-----|
-| [agc-authservice-demo-java](./agc-authservice-demo-java) | [![version](https://img.shields.io/badge/Release-1.1.0.300-yellow)](./agc-authservice-demo-java) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-server-getstarted-0000001054287616) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/auth-serversdk-overview-0000001055363337) |
-| [agc-cloudstorage-demo-nodejs](./agc-cloudstorage-demo-nodejs) | [![version](https://img.shields.io/badge/Release-1.0.0-yellow)](./agc-cloudstorage-demo-nodejs) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-cloudstorage-getstarted-nodejs) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/Overview-nodejs) |
+| [authservice](./authservice) | [![version](https://img.shields.io/badge/Release-1.1.0.300-yellow)](./authservice) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-server-getstarted-0000001054287616) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/auth-serversdk-overview-0000001055363337) |
 
 ## Precautions
 The agc-android-demos project contains 15 independent projects. After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
