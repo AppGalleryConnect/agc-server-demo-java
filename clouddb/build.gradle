@@ -20,7 +20,7 @@ repositories {
     maven {
         url 'https://developer.huawei.com/repo/'
     }
-	google()
+    google()
     jcenter()
 }
 
