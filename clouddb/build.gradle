@@ -26,11 +26,7 @@ repositories {
 
 dependencies {
     // This dependency is used by the application.
-<<<<<<< HEAD
     implementation('com.huawei.agconnect.server:agconnect-database-server-sdk:1.0.2.300')
-=======
-    implementation('com.huawei.agconnect.server:agconnect-database-server-sdk:1.0.1.300')
->>>>>>> 3cd47c83918676bdfe31be37654f44a505267582
 }
 
 application {
