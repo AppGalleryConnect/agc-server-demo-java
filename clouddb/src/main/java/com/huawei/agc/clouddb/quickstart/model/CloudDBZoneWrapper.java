@@ -20,11 +20,13 @@ import com.huawei.agconnect.server.clouddb.exception.AGConnectCloudDBException;
 import com.huawei.agconnect.server.clouddb.request.CloudDBZoneConfig;
 import com.huawei.agconnect.server.clouddb.request.CloudDBZoneQuery;
 import com.huawei.agconnect.server.clouddb.service.AGConnectCloudDB;
+import com.huawei.agconnect.server.clouddb.service.ClientNameEnum;
 import com.huawei.agconnect.server.clouddb.service.CloudDBZone;
 import com.huawei.agconnect.server.clouddb.service.impl.CloudDBZoneSnapshot;
 import com.huawei.agconnect.server.clouddb.service.impl.Transaction;
 import com.huawei.agconnect.server.commons.AGCClient;
 import com.huawei.agconnect.server.commons.AGCParameter;
+import com.huawei.agconnect.server.commons.constants.Constants;
 import com.huawei.agconnect.server.commons.credential.CredentialParser;
 import com.huawei.agconnect.server.commons.exception.AGCException;
 
@@ -48,11 +50,18 @@ public class CloudDBZoneWrapper {
              * Change the value of 'credentialPath' to the path of the credential file.
              * */
             String credentialPath = "/path/agc-apiclient-xxx-xxx.json";
-            AGCClient.initialize(AGCParameter.builder()
+            /*
+             * Initialize the instance of the corresponding storage area.
+             */
+            AGCClient.initialize(ClientNameEnum.CLOUDDB_CN.getClientName(), AGCParameter.builder()
                     .setCredential(CredentialParser.toCredential(credentialPath))
-                    .build());
+                    .build(), Constants.Region.REGION_CN);
             CloudDBZoneConfig cloudDBZoneConfig = new CloudDBZoneConfig("QuickStartDemo");
-            agConnectCloudDB = AGConnectCloudDB.getInstance();
+            /*
+             * Obtain the instance of the corresponding storage area.
+             */
+            AGCClient agcClient = AGCClient.getInstance(ClientNameEnum.CLOUDDB_CN.getClientName());
+            agConnectCloudDB = AGConnectCloudDB.getInstance(agcClient);
             mCloudDBZone = agConnectCloudDB.openCloudDBZone(cloudDBZoneConfig);
         } catch (AGCException e) {
             System.out.println("Constructor: " + e.getMessage());

@@ -20,13 +20,12 @@ repositories {
     maven {
         url 'https://developer.huawei.com/repo/'
     }
-    google()
     jcenter()
 }
 
 dependencies {
     // This dependency is used by the application.
-    implementation('com.huawei.agconnect.server:agconnect-database-server-sdk:1.0.2.300')
+    implementation('com.huawei.agconnect.server:agconnect-database-server-sdk:1.0.3.300')
 }
 
 application {
