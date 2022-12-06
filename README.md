@@ -14,7 +14,7 @@ These are the available demos in this repository.
 ### Server-Java
 | Demo | Version | Documentation |
 |--------|-----|-----|
-| [authservice](./authservice) | [![version](https://img.shields.io/badge/Release-1.2.0.300-yellow)](./authservice) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-server-getstarted-0000001054287616) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/auth-serversdk-overview-0000001055363337) |
+| [authservice](./authservice) | [![version](https://img.shields.io/badge/Release-1.2.0.301-yellow)](./authservice) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-server-getstarted-0000001054287616) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/auth-serversdk-overview-0000001055363337) |
 
 ## Precautions
 The agc-android-demos project contains several independent projects. After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
