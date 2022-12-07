@@ -14,10 +14,13 @@ These are the available demos in this repository.
 ### Server-Java
 | Demo | Version | Documentation |
 |--------|-----|-----|
-| [authservice](./authservice) | [![version](https://img.shields.io/badge/Release-1.2.0.301-yellow)](./authservice) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-server-getstarted-0000001054287616) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/auth-serversdk-overview-0000001055363337) |
+| [authservice](./authservice) | [![version](https://img.shields.io/badge/Release-1.2.0.301-yellow)](./authservice) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-auth-introduction-0000001053732605) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/auth-serversdk-overview-0000001055363337) |
+| [clouddb](./clouddb) | [![version](https://img.shields.io/badge/Release-1.2.0.301-yellow)](./clouddb) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-clouddb-introduction-0000001054212760) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/clouddb-serverjava-overview-0000001080565858) |
+| [cloudfunction](./cloudfunction) | [![version](https://img.shields.io/badge/Release-1.2.0.301-yellow)](./cloudfunction) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-cloudfunction-introduction-0000001059279544) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/overview-java-0000001238033205) |
+| [cloudstorage](./cloudstorage) | [![version](https://img.shields.io/badge/Release-1.2.0.301-yellow)](./cloudstorage) | [Getting Started](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-Guides/agc-cloudstorage-introduction-0000001054847259) <br/> [API Reference](https://developer.huawei.com/consumer/en/doc/development/AppGallery-connect-References/overview-0000001158348859) |
 
 ## Precautions
-The agc-android-demos project contains several independent projects. After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
+The agc-android-demos project contains 4 independent projects. After downloading the code, you can load different nested projects to the IDE as required. And you can run each project independently.
 
 ## Question or issues
 If you have questions about how to use AppGallery Connect Demos, try the following options:  
