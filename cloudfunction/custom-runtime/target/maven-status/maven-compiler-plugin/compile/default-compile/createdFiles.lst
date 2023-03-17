@@ -1,0 +1,5 @@
+com\huawei\faas\controller\HelloController.class
+com\huawei\faas\Application.class
+com\huawei\faas\utils\PropertyUtil.class
+com\huawei\faas\utils\MyException.class
+com\huawei\faas\utils\ClasspathLoader.class

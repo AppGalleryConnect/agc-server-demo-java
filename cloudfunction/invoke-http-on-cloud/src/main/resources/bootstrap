@@ -1,0 +1,2 @@
+#!/bin/bash
+java -jar ./invoke-http-function-on-cloud-1.0-SNAPSHOT.jar
