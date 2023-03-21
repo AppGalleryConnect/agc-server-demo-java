@@ -1,7 +1,3 @@
-/*
- * Copyright (c) Huawei Technologies Co., Ltd. 2023-2023. All rights reserved.
- */
-
 package com.huawei.faas.service;
 
 import com.huawei.agconnect.server.commons.AGCClient;

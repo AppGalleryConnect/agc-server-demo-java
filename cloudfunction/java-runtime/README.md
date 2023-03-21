@@ -1,7 +1,7 @@
-# Java-runtime cloud function
+# Java-runtime-function-demo project
 
 ## Introduction
-Java-runtime cloud function help you quickly build your cloud function(java-runtime).
+Java-runtime project help you quickly build your cloud function(java-runtime).
 
 ## Preparing the Environment
 Before using the sdk, your server need support Java 8 or higher.

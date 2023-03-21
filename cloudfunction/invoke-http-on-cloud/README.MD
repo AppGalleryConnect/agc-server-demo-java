@@ -1,7 +1,7 @@
 ## invoke-http-function-on-cloud Quickstart
 
 ## Introduction
-invoke-http-function-on-cloud demo help you quickly build your cloud function(custom-runtime).
+invoke-http-function-on-cloud demo help you quickly build your cloud function(custom-runtime). Invoking http function on the cloud refers to invoking APIs using SDKs in the java-runtime or custom-runtime running environment of cloud functions.
 
 ## Preparing the Environment
 Before using the sdk, your server need support Java 8 or higher.
