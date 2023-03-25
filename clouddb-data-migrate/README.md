@@ -18,7 +18,7 @@
 
 ​	—./agc-apiclient.json	认证凭据，可在下图所示位置下载得到。建议将下载后的文件改名后覆盖当前文件或将内容拷贝至本文件中。也可以选择直接使用下载后的文件，但需要注意修改读取该文件的代码逻辑以匹配正确的文件名称，代码逻辑位于AuthenticateTool.java中。
 
-![image-20230111171031616](image\image-20230111171031616.png)
+<img src="image\image-20230111171031616.png" alt="image-20230111171031616" />
 
 ​	—./db.properties	源数据库相关配置，需要APP开发者根据实际的数据库类型填写对应url、driver，根据实际配置填写数据库用户的名称和密码。
 
@@ -314,7 +314,7 @@ source值为源数据库表中字段的名称；
 
 ​	在Cloud DB侧下载对象类型（表）模型类，下载步骤如下：
 
-1. ![image-20230111165732281](image\image-20230111165732281.png)
+1. <img src="image\image-20230111165732281.png" alt="image-20230111165732281" />
 
 2. 开发者输入包名，选择确定后导出文件。示例中包名为：com.huawei.agc.cluddb.quickstart.target.model。
 
@@ -467,15 +467,15 @@ public class ColumnMapping {
 
 源数据库（PostgreSQL）侧数据如下：
 
-![image-20230113122337924](image\image-20230113122337924.png)
+<img src="image\image-20230113122337924.png" alt="image-20230113122337924" />
 
 迁移成功后，Cloud DB侧数据：
 
-![image-20230113122819277](image\image-20230113122819277.png)
+<img src="image\image-20230113122819277.png" alt="image-20230113122819277" />
 
 导出JSON文件：
 
-![image-20230113123029119](image\image-20230113123029119.png)
+<img src="image\image-20230113123029119.png" alt="image-20230113123029119" />
 
 JSON文件（functionTestDbA_BookInfo_0.json）内容（已格式化）如下：
 
