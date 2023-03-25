@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN" monitorInterval="60" shutdownHook="disable">
+
+  <Properties>
+    <Property name="LOG_HOME">./logs</Property>
+    <Property name="APP_LOG_NAME">application</Property>
+    <Property name="SYS_LOG_NAME">system</Property>
+    <Property name="ERR_LOG_NAME">error</Property>
+    <Property name="BASIC_LOG_FOLDER">run</Property>
+    <Property name="APP_LOG_FOLDER">application</Property>
+    <Property name="SYS_LOG_FOLDER">system</Property>
+    <Property name="ERR_LOG_FOLDER">error</Property>
+  </Properties>
+
+  <Appenders>
+    <Console name="Console" target="SYSTEM_OUT">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%level] [%F:%line] - %m%n" />
+    </Console>
+
+    <!-- runtime log config -->
+    <RollingRandomAccessFile name="AppLog"
+        fileName="${LOG_HOME}/${BASIC_LOG_FOLDER}/${APP_LOG_FOLDER}/${APP_LOG_NAME}.log"
+        filePattern="${LOG_HOME}/${BASIC_LOG_FOLDER}/${APP_LOG_FOLDER}/${APP_LOG_NAME}-%i.log.zip"
+        immediateFlush="true">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%level] [%F:%line] %m%n" />
+      <Policies>
+        <SizeBasedTriggeringPolicy size="100MB" />
+      </Policies>
+      <DefaultRolloverStrategy max="4000">
+        <Delete basePath="${LOG_HOME}/${BASIC_LOG_FOLDER}/${APP_LOG_FOLDER}" maxDepth="1">
+          <IfFileName glob="${APP_LOG_NAME}*.zip">
+            <IfLastModified age="200d" />
+          </IfFileName>
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingRandomAccessFile>
+
+    <RollingRandomAccessFile name="SystemLog"
+        fileName="${LOG_HOME}/${BASIC_LOG_FOLDER}/${SYS_LOG_FOLDER}/${SYS_LOG_NAME}.log"
+        filePattern="${LOG_HOME}/${BASIC_LOG_FOLDER}/${SYS_LOG_FOLDER}/${SYS_LOG_NAME}-%i.log.zip"
+        immediateFlush="true">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%level] [%F:%line] %m%n" />
+      <Policies>
+        <SizeBasedTriggeringPolicy size="100MB" />
+      </Policies>
+      <DefaultRolloverStrategy max="4000">
+        <Delete basePath="${LOG_HOME}/${BASIC_LOG_FOLDER}/${SYS_LOG_FOLDER}" maxDepth="1">
+          <IfFileName glob="${SYS_LOG_NAME}*.zip">
+            <IfLastModified age="200d" />
+          </IfFileName>
+        </Delete>
+      </DefaultRolloverStrategy>
+    </RollingRandomAccessFile>
+
+    <RollingRandomAccessFile name="ErrorLog"
+        fileName="${LOG_HOME}/${BASIC_LOG_FOLDER}/${ERR_LOG_FOLDER}/${ERR_LOG_NAME}.log"
+        filePattern="${LOG_HOME}/${BASIC_LOG_FOLDER}/${ERR_LOG_FOLDER}/${ERR_LOG_NAME}-%i.log.zip"
+        immediateFlush="true">
+      <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss.SSS} [%t] [%level] [%F:%line] %m%n" />
+      <Policies>
+        <SizeBasedTriggeringPolicy size="100MB" />
+      </Policies>
+      <DefaultRolloverStrategy max="4000">
+        <Delete basePath="${LOG_HOME}/${BASIC_LOG_FOLDER}/${ERR_LOG_FOLDER}" maxDepth="1">
+          <IfFileName glob="${ERR_LOG_NAME}*.zip">
+            <IfLastModified age="200d" />
+          </IfFileName>
+        </Delete>
+      </DefaultRolloverStrategy>
+      <ThresholdFilter level="WARN" onMatch="ACCEPT" onMismatch="DENY" />
+    </RollingRandomAccessFile>
+
+  </Appenders>
+
+  <Loggers>
+    <Root level="INFO">
+      <AppenderRef ref="SystemLog" />
+    </Root>
+
+    <Logger name="ConsoleLogger" level="INFO">
+      <AppenderRef ref="Console" />
+    </Logger>
+
+    <Logger name="com.huawei.agc.clouddb.quickstart" level="INFO">
+      <AppenderRef ref="AppLog" />
+      <AppenderRef ref="ErrorLog" />
+    </Logger>
+  </Loggers>
+
+</Configuration>
